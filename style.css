@@ -1,0 +1,64 @@
+body {
+    font-family: Arial, sans-serif;
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #2c3e50; 
+}
+
+.container {
+    background-color: #ADD8E6;
+    color: #2F4F4F;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+button {
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Container for status messages */
+#status-message {
+    margin-top: 20px;
+}
+
+/* Container for the three weather option buttons */
+#button-container {
+    margin-top: 20px;
+}
+
+/* Container for weather data results */
+#weather-display {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #ADD8E6;
+    border-radius: 5px;
+}
+
+/* Only show weather-display when it has content */
+#weather-display:empty {
+    display: none;
+    padding: 0;
+}
+
+.error {
+    color: red;
+    margin-top: 10px;
+}
+
+.loading {
+    color: #666;
+    font-style: italic;
+}

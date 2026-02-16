@@ -66,6 +66,7 @@ function handleLocationSuccess(position) {
     userLongitude = position.coords.longitude;
     
     console.log('Location received:', userLatitude, userLongitude);
+    document.getElementById('location-notice').style.display = 'none';
     
     // Update status message to show location retreived successfully
     document.getElementById('status-message').innerHTML = 
@@ -469,40 +470,6 @@ function degreesToCardinal(degrees) {
  * LFG
  */
 getUserLocation();
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
